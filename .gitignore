@@ -40,3 +40,5 @@ jspm_packages
 mc-checker-win32-x64\.zip
 
 mc-checker-win32-x64/
+
+dist/
