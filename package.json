@@ -13,6 +13,17 @@
     "electron": "^1.6.6",
     "electron-builder": "^17.1.1"
   },
+  "build": {
+    "appId": "uk.gaz492.mcChecker",
+    "win": {
+      "target": ["nsis", "nsis-web", "portable"],
+      "publisherName": "Gareth Williams"
+    }
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gaz492/mcChecker.git"
@@ -20,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/gaz492/mcChecker/issues"
   },
-  "homepage": "https://github.com/gaz492/mcChecker#readme"
+  "homepage": "https://github.com/gaz492/mcChecker#readme",
+  "postinstall": "install-app-deps"
 }
