@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MC Checker</title>
+
+    <!-- Bundled CSS -->
+    <link rel="stylesheet" href="./css/uikit.min.css" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/uikit.override.css" />
+  </head>
+  <body class="uk-overflow-hidden">
+  <div class="uk-grid uk-child-width-expand" uk-grid>
+      <div class="uk-width-1-2">
+          <textarea class="uk-textarea" rows="18" id="userlist" placeholder="Userlist"></textarea>
+          <div class="uk-margin-small uk-button-group">
+              <button class="uk-button uk-button-primary" id="check" type="button">Check</button>
+              <button class="uk-button uk-button-danger" id="clear" type="button">Clear</button>
+          </div>
+          <br/>
+          <label><input class="uk-checkbox" id="onlyInValid" type="checkbox">Only Invalid?</label>
+      </div>
+      <div class="uk-overflow-auto uk-height-viewport" uk-height-viewport="expand: false">
+          <table class="uk-table uk-table-small" id="results">
+              <thead>
+              <tr>
+                  <th class="uk-table-shrink">Username</th>
+                  <th class="uk-table-small">Paid</th>
+              </tr>
+              </thead>
+              <tbody id="resultsBody">
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <script src="./js/jquery.3.1.1.js"></script>
+  <script src="./js/uikit.min.js"></script>
+  <script src="./js/uikit.icons.min.js"></script>
+  <script src="./js/mcCheck.js"></script>
+  <!--<script>-->
+      <!--require('electron-connect').client.create()-->
+  <!--</script>-->
+  <script>if (window.module) module = window.module;</script>
+  </body>
+</html>

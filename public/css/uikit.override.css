@@ -1,0 +1,30 @@
+/*.uk-card-media-top{
+    padding-top: 10px;
+}
+.uk-card-media-top > img{
+    width: 158px;
+    height: 158px;
+}
+.uk-card-title {
+    font-size: 1rem;
+    line-height: 0;
+}
+.uk-card-body {
+     padding-bottom: 10px; 
+}
+.uk-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1020;
+    box-sizing: border-box;
+    min-width: 150px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    color: #666;
+    box-shadow: 0px 0px 12px 6px rgba(0,0,0,.15);
+}*/
+
+textarea {
+    resize: none;
+}

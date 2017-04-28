@@ -1,0 +1,13 @@
+{
+  "name": "mc-checker",
+  "version": "1.0.0",
+  "description": "Loops thorugh text file containing minecraft usernames",
+  "main": "app.js",
+  "author": "Gareth Williams",
+  "license": "SEE Licence File",
+  "dependencies": {
+    "electron": "^1.6.6",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  }
+}
