@@ -1,6 +1,6 @@
 {
   "name": "mc-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reads textarea containing minecraft usernames",
   "main": "app.js",
   "author": "Gareth Williams",
@@ -17,6 +17,7 @@
     "appId": "uk.gaz492.mcChecker",
     "win": {
       "target": ["nsis", "nsis-web", "portable"],
+      "publish": ["github"],
       "publisherName": "Gareth Williams"
     }
   },
