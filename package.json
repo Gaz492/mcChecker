@@ -16,8 +16,11 @@
   "build": {
     "appId": "uk.gaz492.mcChecker",
     "win": {
-      "target": ["nsis", "nsis-web", "portable"],
-      "publish": ["github"],
+      "target": [
+        "nsis",
+        "nsis-web",
+        "portable"
+      ],
       "publisherName": "Gareth Williams"
     }
   },
