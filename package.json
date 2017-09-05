@@ -6,12 +6,13 @@
   "author": "Gareth Williams",
   "license": "SEE LICENCE IN LICENCE",
   "dependencies": {
+    "electron-debug": "^1.4.0",
     "request": "^2.81.0",
-    "request-promise": "^4.2.0"
+    "request-promise": "^4.2.1"
   },
   "devDependencies": {
-    "electron": "^1.6.6",
-    "electron-builder": "^17.1.1"
+    "electron": "^1.8.0",
+    "electron-builder": "^17.10.0"
   },
   "build": {
     "appId": "uk.gaz492.mcChecker",
@@ -25,6 +26,7 @@
     }
   },
   "scripts": {
+    "start": "electron .",
     "pack": "build --dir",
     "dist": "build"
   },

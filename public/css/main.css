@@ -4,3 +4,61 @@ html{
     margin: 0;
     height:100vh;
 }
+
+.uk-table-small td, .uk-table-small th {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.titlebar {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    width: 100vw;
+    /*margin: 0.1rem 0 0 0;*/
+    height: 1.9rem;
+    background: #252526;
+    justify-content: space-between;
+    top: 0;
+}
+
+.titlebar-title {
+    font-size: 1.2rem;
+    line-height: 2.9rem;
+    color: white;
+    padding: 0 1rem;
+    margin: 0;
+    -webkit-app-region: drag;
+}
+
+.titlebar-section {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.titlebar-section-middle {
+    flex: 1;
+    -webkit-app-region: drag;
+}
+
+.titlebar-icon {
+    cursor: default !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 2.5rem;
+    color: white;
+}
+
+.titlebar-icon .fill {
+    fill: white;
+}
+
+.titlebar-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.titlebar-icon-close:hover {
+    background: #fc3636;
+}

@@ -2,6 +2,7 @@
 const {app, BrowserWindow} = require('electron');
 const url = require('url');
 const path = require('path');
+require('electron-debug')({ showDevTools: false });
 
 let win;
 
@@ -11,9 +12,9 @@ function createWindow() {
         {
             // Window Settings
             backgroundColor: '#252526',
-            // frame: false,
+            frame: false,
             resizable: false,
-            // titleBarStyle: 'hidden-inset',
+            titleBarStyle: 'hidden-inset',
             title: "Minecraft Username Checker",
 
             // Other
